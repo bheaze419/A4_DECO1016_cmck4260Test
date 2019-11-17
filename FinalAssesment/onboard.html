@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css">	
+	
 </head>
 
 <body>
-    <nav class="topnav">
-        <ul>
-            <li><a href="#foxtel">Foxtel</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#discover">Discover</a></li>
-            <li><a href="#support">Support</a></li>
-            <li><a href="#watch">Watch</a></li>
-            <li class="button7"><a href="#signup">Sign up</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-        </ul>
+
+    <nav class="topnav" id="myTopnav">    
+           <a href="#foxtel" class="active">Foxtel</a>
+           <a href="#shop">Shop</a>
+            <a href="#discover">Discover</a>
+           <a href="#support">Support</a>
+            <a href="#watch">Watch</a>
+            <a href="#signup">Sign up</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
+    <p class="label">Begin</p>
     <iframe class="progress" src="Asset 1.svg" frameborder="0" width="500px "></iframe>
     <form action="/action.php">
         <div class="inputs">
@@ -85,7 +85,16 @@
         </div>
         <input type="submit" value="Submit">
     </form>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 
 </html>

@@ -10,7 +10,15 @@
     width: 100%
 }
 
-
+.label {
+    margin: 0;
+    padding: 0;
+    pos
+}
+.progress {
+    margin: 0;
+    padding: 0;
+}
 ul {
     box-sizing: border-box;
     width: 100%;
@@ -67,10 +75,10 @@ img {
 
 .onboard {
     box-sizing: border-box;
-    display: flexbox;
+    display: flex;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     /* transform: translate(-50%, -50%); */
     padding: 30px 15px;
     font-size: 30px;
@@ -84,9 +92,9 @@ img {
     box-sizing: border-box;
     display: flex;
     position: absolute;
-    top: 50%;
-    left: 72%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
     letter-spacing: 1px;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -252,6 +260,7 @@ label {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    color: #f2410a;
   }
   
   /* Change the color of links on hover */
@@ -262,7 +271,7 @@ label {
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #f2410a;
     color: white;
   }
   
@@ -280,6 +289,9 @@ label {
     [class*="progress"] {
 
         width: 98%;
+    }
+    [class*="cont"] {
+        display: block;
     }
 }
 
