@@ -10,24 +10,27 @@
     width: 100%
 }
 
+
 .label {
     margin: 0;
     padding: 0;
-    pos
 }
 .progress {
     margin: 0;
     padding: 0;
+    float: top;
+}
+.floaskr {
+    clear: both;
 }
 ul {
     box-sizing: border-box;
     width: 100%;
     display: flexbox;
-    list-style-type: none;
+    /* list-style-type: none; */
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(158, 158, 158, 1) 0%, rgba(252, 254, 255, 1) 100%);
 }
 
 
@@ -57,9 +60,8 @@ li a:hover {
 
 .foxtel-banner {
     box-sizing: border-box;
-    display: flexbox;
-    width: 100%;
-
+    display:flex ;
+    position: sticky;
     background-color: black;
 
 }
@@ -69,17 +71,19 @@ img {
     box-sizing: border-box;
     display: flexbox;
     margin: auto;
-    width: 100%;
+    width: 90%;
 
 }
-
+.together {
+    min-width: 500px;
+}
 .onboard {
     box-sizing: border-box;
     display: flex;
     position: absolute;
     top: 50%;
-    left: 30%;
-    /* transform: translate(-50%, -50%); */
+    left: 45%;
+    transform: translate(-50%, -50%);
     padding: 30px 15px;
     font-size: 30px;
     background: #f2410a;
@@ -102,11 +106,14 @@ img {
 
 
 }
-
+.info {
+    float: right;
+}
 .inputs {
+    float: left;
     box-sizing: border-box;
     display: flexbox;
-
+    width: 750px;
 }
 
 .cont {
@@ -282,8 +289,9 @@ label {
 
 /* media queries */
 @media only screen and (max-width: 500px) {
+    
     [class*="inputMaterial"] {
-        width: 70%;
+        /* width: 90%; */
     }
 
     [class*="progress"] {
@@ -295,10 +303,9 @@ label {
     }
 }
 
-@media only screen and (min-width: 600px) {}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -307,7 +314,7 @@ label {
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
