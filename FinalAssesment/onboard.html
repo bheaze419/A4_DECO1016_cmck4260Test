@@ -22,81 +22,92 @@
         <a href="#signup">Sign up</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
-    <p class="label">Begin</p>
-    <iframe class="progress" src="Asset 1.svg" frameborder="0" width="500px height=
-    100px"></iframe>
-    <div class="floaskr">
-        <div class="inputs">
-            <form action="/action.php">
-
-                <div class="group">
-                    <input class="inputMaterial" type="text" id="name" name="name" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="name">Name:</label>
-                </div>
-                <div class=cont>
-
-                    <div class="group">
-                        <input class="inputMaterial" type="email" id="email" name="email" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label for="email">Email:</label>
-                    </div>
-                    <div class="group">
-                        <input class="inputMaterial" type="email" id="emailConf" name="emailConf" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label for="emailConf">Confirm Email:</label>
-                    </div>
-                </div>
-                <div class=cont>
-                    <div class="group">
-                        <input class="inputMaterial" type="password" id="pwd" name="password" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label for="pwd">Password:</label>
-                    </div>
-                    <div class="group">
-                        <input class="inputMaterial" type="password" id="passConf" name="passConf" required
-                            maxlength="19">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label for="passConf">Confirm Password:</label>
-                    </div>
-                </div>
-                <div class="group">
-                    <input class="inputMaterial" type="number" name="card" required maxlength="19">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="card">Credit Card Number *</label>
-                </div>
-                <div class="group">
-                    <input class="inputMaterial" type="text" id="expiry" name="expiry" required maxlength="8">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="cardConf">Expiry Date *</label>
-
-                </div>
-                <div class="group">
-                    <input class="inputMaterial" type="number" id="security" name="security" required maxlength="3">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="cardConf">Security Code *</label>
-                </div>
-
-                <input type="submit" value="Submit">
-
-            </form>
-            <h2>Sign up</h2>
-            <ul>
-                <li>You'll receive a unique SMS code to activate your 10-day free trial.</li>
-                <li>The free trial will give you access to all packs, no matter what you have selected.</li>
-                <li> You can cancel or change your packs online at any time by logging into My Account.</li>
-            </ul>
-        </div>
+    <div class="prog">
+        <p class="label">Begin</p>
+        <p class="label1">Sign Up</p>
+        <p class="label2">Confirm</p>
     </div>
+    <iframe class="progress" src="Asset 1.svg" frameborder="0"></iframe>
+    <div class="wrap">
+        <h2>Sign up</h2>
+        <ul>
+            <li>You'll receive a unique SMS code to activate your 10-day free trial.</li>
+            <li>The free trial will give you access to all packs, no matter what you have selected.</li>
+            <li> You can cancel or change your packs online at any time by logging into My Account.</li>
+        </ul>
+
+        </p>
     </div>
+    <div class="inputs">
+        <form action="/action.php">
+
+            <div class="group">
+                <input class="inputMaterial" type="text" id="name" name="name" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="name">Name:</label>
+            </div>
+            <div class=cont>
+
+                <div class="group">
+                    <input class="inputMaterial" type="email" id="email" name="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="email">Email:</label>
+                </div>
+                <div class="group">
+                    <input class="inputMaterial" type="email" id="emailConf" name="emailConf" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="emailConf">Confirm Email:</label>
+                </div>
+            </div>
+            <div class=cont>
+                <div class="group">
+                    <input class="inputMaterial" type="password" id="pwd" name="password" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="pwd">Password:</label>
+                </div>
+                <div class="group">
+                    <input class="inputMaterial" type="password" id="passConf" name="passConf" required maxlength="19">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="passConf">Confirm Password:</label>
+                </div>
+            </div>
+            <div class="group">
+                <input class="inputMaterial" type="phone" id="phone" name="phone" required maxlength="16">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="passConf">Phone Number *</label>
+            </div>
+            <div class="group">
+                <input class="inputMaterial" type="number" name="card" required maxlength="19">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="card">Credit Card Number *</label>
+            </div>
+            <div class="group">
+                <input class="inputMaterial" type="text" id="expiry" name="expiry" required maxlength="8">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="cardConf">Expiry Date *</label>
+
+            </div>
+            <div class="group">
+                <input class="inputMaterial" type="number" id="security" name="security" required maxlength="3">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="cardConf">Security Code *</label>
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <img class="gif"
+        src="https://www.foxtel.com.au/content/dam/foxtel/support/img/Tech-troubleshooting/iPhone-open-go.gif" alt="">
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
