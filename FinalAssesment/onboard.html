@@ -36,11 +36,9 @@
             <li>The free trial will give you access to all packs, no matter what you have selected.</li>
             <li> You can cancel or change your packs online at any time by logging into My Account.</li>
         </ul>
-
-        </p>
     </div>
     <div class="inputs">
-        <form id="myform" action="/action.php">
+        <form id="myform" action="/action.php" method="POST" >
 
             <div class="group">
                 <input class="inputMaterial" type="text" id="name" name="name" required>
@@ -103,7 +101,7 @@
                 <label for="cardConf">Security Code *</label>
             </div>
 
-            <input type="submit" value="Submit">
+            <input type="submit" class="onboard" value="Submit">
 
         </form>
     </div>
