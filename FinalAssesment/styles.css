@@ -21,17 +21,17 @@ body {
 
 
 .label {
-    /* display: inline; */
+     
     margin: 29px 0px -20px 0px
 }
 
 .label1 {
-    /* display: inline; */
+     
     margin: 0px 0px -20px 150px
 }
 
 .label2 {
-    /* display: inline; */
+     
     margin: 0px 0px -48px 300px
 }
 
@@ -48,10 +48,10 @@ ul {
     width: 100%;
     display: flexbox;
     /* list-style-type: none; */
-    margin: 0;
     /* padding: 0; */
     overflow: hidden;
 }
+
 
 
 li a {
@@ -77,41 +77,45 @@ li a:hover {
 }
 
 .button7 {
-    border-radius: 10%;
+    border-radius: 40%;
     box-sizing: border-box;
     display: flexbox;
     color: #f2410a;
 }
-
+.skeet {
+    display: inline;
+    position: absolute;
+    margin: 0px 0px -20px 150px;
+    color: #white;
+}
 .foxtel-banner {
     box-sizing: border-box;
     display: flex;
-    position: sticky;
-    background-color: black;
-
-    display: flexbox;
-    margin: 0;
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    /* ie8 */
+    position: absolute;
+    margins
+    width: 100%;
+       
 }
 
-
-
+.skrskr {
+    right: -30px;
+}
 .onboard {
     box-sizing: border-box;
-    display: flex;
-    position: static;
-    padding: 30px 15px;
-    font-size: 30px;
+    /* display: flex; */
+    /* position: relative; */
     border-radius: 40px;
     border: none;
+    top: 100px;
+    left: 100px;
     letter-spacing: 1px;
-    stroke: 200px;
     color: black;
     background-color: #f2410a;
     font-family: impact;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+    right: -50px;
 }
 
 
@@ -137,8 +141,8 @@ li a:hover {
 .inputs {
     box-sizing: border-box;
     display: flexbox;
-    width: 750px;
-    transform: translate(0%, -10%);
+    /* width: 750px; */
+    transform: translate(0%, -9%);
 }
 
 .cont {
@@ -185,7 +189,7 @@ svg * {
     }
 }
 
-/* BOX LOGIN */
+
 
 .box p {
     font-size: 14px;
@@ -212,8 +216,6 @@ svg * {
     outline: none;
 }
 
-/* LABEL ======================================= */
-
 label {
     color: #999;
     font-size: 14px;
@@ -227,7 +229,6 @@ label {
     -webkit-transition: 0.2s ease all;
 }
 
-/* active state */
 .inputMaterial:focus~label,
 .inputMaterial:valid~label {
     top: -20px;
@@ -235,7 +236,6 @@ label {
     color: #f2410a;
 }
 
-/* BOTTOM BARS ================================= */
 .bar {
     position: relative;
     display: block;
@@ -243,6 +243,7 @@ label {
 }
 
 .bar:before,
+
 .bar:after {
     content: '';
     height: 2px;
@@ -263,14 +264,13 @@ label {
     right: 50%;
 }
 
-/* active state */
 .inputMaterial:focus~.bar:before,
 .inputMaterial:focus~.bar:after {
     width: 50%;
 }
 
 
-/* active state */
+
 .inputMaterial:focus~.highlight {
     -webkit-animation: inputHighlighter 0.3s ease;
     -moz-animation: inputHighlighter 0.3s ease;
@@ -279,13 +279,12 @@ label {
 
 
 
-/* Add a black background color to the top navigation */
-.topnav {
+
+.navFlow {
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.navFlow a {
     float: left;
     display: block;
     text-align: center;
@@ -295,30 +294,22 @@ label {
     color: #f2410a;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+]
+.navFlow a:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
+.navFlow a.active {
     background-color: #f2410a;
     color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.navFlow .icon {
     display: none;
 }
 
-/* media queries */
 
-/* @media screen and (min-width: 750px) {
-    .together {
-        transform: translate(37%, -175%);
-    }
-} */
 
 @media screen and (max-width: 750px) {
     [class*="cont"] {
@@ -333,43 +324,43 @@ label {
 
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 520px) {
-    .topnav a:not(:first-child) {
+    .navFlow a:not(:first-child) {
         display: none;
     }
 
-    /* 
-    @media screen and (max-width: 520px) {
-        .together {
-            transform: translate(84%, -173%);
-        } */
 
-    .topnav a.icon {
+    .navFlow a.icon {
         float: right;
         display: block;
     }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 520px) {
-    .topnav.responsive {
+    .navFlow.responsive {
         position: relative;
     }
 
-    .topnav.responsive a.icon {
+    .navFlow.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    .topnav.responsive a {
+    .navFlow.responsive a {
         float: none;
         display: block;
         text-align: left;
+        position: ;
     }
 }
-
+@media screen and (max-width: 1200px) {
+    [class*="progress"] {
+        400px
+    }
+    @media screen and (min-width: 1200px) {
+        [class*="progress"] {
+            width: 98%;
 @media screen and (max-width: 350px) {
 
     [class*="inputMaterial"] {
@@ -381,11 +372,21 @@ label {
     }
 
     [class*="prog"] {
-        transform: translate(0%, 0%);
+        width: 95%;
     }
 }
-/* @media screen and (max-width: 1350px) {
+
+/* @media screen and (min-width: 1350px) {
     .foxtel-banner {
-        max-width: 1350px;
+        max-width: 99%;
     }
+}
+@media screen and (max-width: 1350px) {
+    .foxtel-banner {
+        display: flexbox;
+        margin: 0;
+        float: right;
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
 } */

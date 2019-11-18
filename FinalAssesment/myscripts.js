@@ -8,55 +8,57 @@ var g = document.forms["register"]["phone"].value;
 var h = document.forms["register"]["expiry"].value;
 var j = document.forms["register"]["security"].value;
 
-form.addEventListener('submit', (e) {
-            e.preventDefault()
+form.addEventListener('submit', (e) =>{
+    e.preventDefault()
+})
+
+/*------------------- functions ---------------- */
+,function validate() {
+   if( checkEmpty() && checkFeild(email, emailC) && checkFeild(pwd, pwdC) && cardCheck(card) ) {
+     
+   }
+}
+,function expCheck(date){
+    var 
+}
+,function checkEmpty() {
+    if (!a.value || !b.value || !c.value || !d.value || !e.value || !f.value || !g.value || !h.value || !j.value) {
+        alert("Please fill all the inputs");
+        return false;
+    } else {
+        return true;
+    }
+}
+,function checkFeild(p, q) {
+    if (p == q) {
+        return true;
+    } else {
+        alert("Please Check Feilds match");
+        return false;
+    }
+}
+
+
+,function cardCheck(creditCardNumber) {
+    var number;
+    var numCheck; 
+    var flag;
+    var length;
+    var  sum;
+    var xi;
+    flag = true;
+    sum = 0;
+    numCheck = (creditCardNumber + '').split('').reverse();
+    for (xi = 0, length = numCheck.length; xi < length; xi++) {
+       num= numCheck[xi];
+       num= parseInt(digit, 10);
+        if ((flag = !flag)) {
+           num*= 2;
         }
-
-        /*------------------- functions ---------------- */
-        function validate() {
-            checkEmpty();
-            checkFeild(email, emailC);
-            checkFeild(pwd, pwdC);
-            cardCheck(card);
-
-
+        if (digit > 9) {
+           num-= 9;
         }
-
-        function checkEmpty() {
-
-            if (!a || !b || !c || !d || !e || !f || !g || !h || !j) {
-                alert("Please fill all the inputs");
-                return false;
-            } else {
-                return true;
-            }
-        }
-
-        function checkFeild(a, b) {
-            if (a == b) {
-                return true;
-            } else {
-                alert("Please Check Feilds match");
-                return false;
-            }
-        }
-
-
-        function cardCheck(creditCardNumber) {
-            var digit, digits, flag, sum, _i, _len;
-            flag = true;
-            sum = 0;
-            digits = (creditCardNumber + '').split('').reverse();
-            for (_i = 0, _len = digits.length; _i < _len; _i++) {
-                digit = digits[_i];
-                digit = parseInt(digit, 10);
-                if ((flag = !flag)) {
-                    digit *= 2;
-                }
-                if (digit > 9) {
-                    digit -= 9;
-                }
-                sum += digit;
-            }
-            return sum % 10 === 0;
-        }
+        sum += digit;
+    }
+    return sum % 10 === 0;
+}
