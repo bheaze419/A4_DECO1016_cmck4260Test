@@ -61,22 +61,35 @@ img {
     box-sizing: border-box;
     display: flexbox;
     margin: auto;
+<<<<<<< Updated upstream
     width: 100%;
+=======
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+>>>>>>> Stashed changes
 
 }
 
 .onboard {
     box-sizing: border-box;
+<<<<<<< Updated upstream
     display: flexbox;
     position: absolute;
     top: 50%;
     left: 50%;
     /* transform: translate(-50%, -50%); */
     padding: 30px 15px;
+=======
+    padding: 16px 25px;
+>>>>>>> Stashed changes
     font-size: 30px;
     background: #f2410a;
     border-radius: 40px;
     border: none;
+<<<<<<< Updated upstream
 
 }
 
@@ -88,9 +101,38 @@ img {
     left: 72%;
     transform: translate(-50%, -50%);
     letter-spacing: 1px;
+=======
+    letter-spacing: 1px;
+    stroke: 200px;
+    color: white;
+    background-color: #f2410a;
+
+}
+
+.together {
+    position: absolute;
+    object-position: absolute;
+    bottom:  22%;
+    left: 36%;
+    right: 15%;
+    
+}
+
+/* 
+.black {
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    background-color: black; */
+
+
+.promo {
+>>>>>>> Stashed changes
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 3px 3px black;
+    letter-spacing: 3px;
+
 
 
 }
@@ -272,10 +314,18 @@ label {
   }
 
 /* media queries */
+<<<<<<< Updated upstream
 @media only screen and (max-width: 500px) {
     [class*="inputMaterial"] {
         width: 70%;
     }
+=======
+
+/* @media screen and (min-width: 750px) {
+    .together {
+         transform: translate(37%, -175%);     
+    } */
+>>>>>>> Stashed changes
 
     [class*="progress"] {
 
@@ -286,8 +336,20 @@ label {
 @media only screen and (min-width: 600px) {}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+<<<<<<< Updated upstream
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
+=======
+@media screen and (max-width: 520px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    /* @media screen and (max-width: 520px)
+    .together {
+        transform: translate(84%, -173%);
+    } */
+>>>>>>> Stashed changes
     .topnav a.icon {
       float: right;
       display: block;
@@ -307,4 +369,16 @@ label {
       display: block;
       text-align: left;
     }
+<<<<<<< Updated upstream
   }
+=======
+
+    [class*="progress"] {
+        width: 98%;
+    }
+
+    [class*="prog"] {
+        transform: translate(0%, 0%);
+    }
+}
+>>>>>>> Stashed changes
