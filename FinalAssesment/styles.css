@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 1600px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -29,22 +29,21 @@ body {
 
 .label1 {
 
-    margin: 0px 0px -30px 150px
+    margin: 0px 0px -30px 
+    150px
 }
-
 .label2 {
 
     margin: 0px 0px -48px 300px
 }
-
 .prog {
     margin: 0;
     padding: 0;
     width: 350px;
     white-space: nowrap;
+    
 
 }
-
 ul {
     box-sizing: border-box;
     width: 100%;
@@ -53,9 +52,6 @@ ul {
     /* padding: 0; */
     overflow: hidden;
 }
-
-
-
 li a {
     box-sizing: border-box;
     float: left;
@@ -82,7 +78,7 @@ li a:hover {
     text-overflow: ellipsis;
 }
 #confBut {
-    margin-left: 35%;
+    margin-left: 25%;
 }
 .button7 {
     border-radius: 40%;
@@ -90,14 +86,12 @@ li a:hover {
     display: flexbox;
     color: #f2410a;
 }
-
 .skeet {
     display: inline;
     position: absolute;
     margin: -297px -2px 0px 440px;
     color: white;
 }
-
 .foxtel-banner {
     box-sizing: border-box;
     display: flex;
@@ -105,33 +99,31 @@ li a:hover {
     overflow: hidden;
     width: 100%;
 }
-
 .skrskr {
-    right: -30px;
+    /* right: -30px; */
+    margin: auto;
+  width: 50%;
+  margin-top: 110px;
 }
-
 .onboard {
     box-sizing: border-box;
-    /* display: flex; */
     /* position: relative; */
     border-radius: 40px;
-    border: none;
+    border: inset;
+    border-color: #db6a4e;
     top: 100px;
     left: 100px;
     letter-spacing: 1px;
     color: black;
     background-color: #f2410a;
     font-family: impact;
-    width: 100px;
+    width: 200px;
     text-align: center;
     right: -50px;
     height: 37px;
     font-size: 22px;
+    /* margin-top: 104px; */
 }
-
-
-
-
 .together {
     display: flex;
     align-items: center;
@@ -139,12 +131,10 @@ li a:hover {
 }
 
 .centered {
-    /* top: 35%;
-    left: 55%; */
-
+ 
 
     color: white;
-    width: 100%;
+    width:300px;
     text-shadow: 3px 3px black;
 
 }
