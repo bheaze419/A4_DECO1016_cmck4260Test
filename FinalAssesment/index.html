@@ -5,35 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Foxtel</title>
 
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#foxtel">Foxtel</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#discover">Discover</a></li>
-            <li><a href="#support">Support</a></li>
-            <li><a href="#watch">Watch</a></li>
-            <li class="button7"><a href="onboard.html">Sign up</a></li>
-        </ul>
+    <nav class="navFlow" id="myTopnav">
+        <a href="#foxtel" class="active">Foxtel</a>
+        <a href="#shop">Shop</a>
+        <a href="#discover">Discover</a> 
+        <a href="#support">Support</a>
+        <a href="#watch">Watch</a>
+        <a href="#signup">Sign up</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
     <div class="onboard">
-        <div class="foxtel-banner">
+        <!-- <div class="foxtel-banner">
             <img
                 src="https://mumbrella.com.au/wp-content/uploads/2018/09/Foxtel-App-TabletMobile-Mockup-1280x720-1.jpg">
-        </div>
+        </div> -->
         <div>
-            <button class="onboard">Sign up</button>
+            <button class="onboard" src="confimation.html">Sign up</button>
             <h1 class="centered">10 day FREE trial# <br>best choice of dramas, sport <br> and entertainment shows</h1>
         </div>
     </div>
 </body>
-
-</html>
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -44,4 +42,6 @@
         }
     }
 </script>
+
+</html>
 

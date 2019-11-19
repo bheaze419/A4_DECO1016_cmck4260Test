@@ -15,15 +15,16 @@ form.addEventListener('submit', (e) => {
 })
 
 /*------------------- functions ---------------- */
-,function validate() {
+function validate() {
    if( checkEmpty() && checkFeild(email, emailC) && checkFeild(pwd, pwdC) && cardCheck(card) ) {
      
    }
 }
-,function expCheck(date){
+function expCheck(date){
     var 
 }
-,function checkEmpty() {
+
+function checkEmpty() {
     if (!a.value || !b.value || !c.value || !d.value || !e.value || !f.value || !g.value || !h.value || !j.value) {
         alert("Please fill all the inputs");
         return false;
@@ -31,7 +32,7 @@ form.addEventListener('submit', (e) => {
         return true;
     }
 }
-,function checkFeild(p, q) {
+function checkFeild(p, q) {
     if (p == q) {
         return true;
     } else {
@@ -41,7 +42,7 @@ form.addEventListener('submit', (e) => {
 }
 
 
-,function cardCheck(creditCardNumber) {
+function cardCheck(creditCardNumber) {
     var number;
     var numCheck; 
     var flag;

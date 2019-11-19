@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <nav class="navFlow" id="myTopnav">
         <a href="#foxtel" class="active">Foxtel</a>
         <a href="#shop">Shop</a>
@@ -23,113 +22,115 @@
         <a href="#signup">Sign up</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
-    <div class="prog">
-        <p class="label">Begin</p>
-        <p class="label1">Sign Up</p>
-        <p class="label2">Confirm</p>
-    </div>
-    <iframe class="prog" src="Asset 1.svg" frameborder="0"></iframe>
-    <div class="wrap">
-        <h2 class="skrskr">Almost There! =]</h2>
-        <ul>
-            <li>You'll receive a unique SMS code to activate your 10-day free trial.</li>
-            <li>The free trial will give you access to all packs, no matter what you have selected.</li>
-            <li> You can cancel or change your packs online at any time by logging into My Account.</li>
-        </ul>
-    </div>
+    <div class="marge">
+        <div class="prog">
+            <p class="label">Begin</p>
+            <p class="label1">Sign Up</p>
+            <p class="label2">Confirm</p>
+            <iframe class="prog" src="Asset 1.svg" frameborder="0"></iframe>
+        </div>
+        <div class="wrap">
+            <h2 class="skrskr">Almost There! =]</h2>
+            <ul>
+                <li>You'll receive a unique SMS code to activate your 10-day free trial.</li>
+                <li>The free trial will give you access to all packs, no matter what you have selected.</li>
+                <li> You can cancel or change your packs online at any time by logging into My Account.</li>
+            </ul>
+        </div>
+        
+        <!-- <div class="foxtel-banner">
+            <img style: src="https://mumbrella.com.au/wp-content/uploads/2018/09/Foxtel-App-TabletMobile-Mockup-1280x720-1.jpg">
+        </div> -->
+        <div class="inputs">
+            <form id="myform" action="/action.php" method="POST" >
     
-    <div class="foxtel-banner">
-        <img style: src="https://mumbrella.com.au/wp-content/uploads/2018/09/Foxtel-App-TabletMobile-Mockup-1280x720-1.jpg">
+                <div class="group">
+                    <input class="inputMaterial" type="text" id="name" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="name">Name:</label>
+                </div>
+                <div class=cont>
+    
+                    <div class="group">
+                        <input class="inputMaterial" type="email" id="email" name="email" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="group">
+                        <input class="inputMaterial" type="email" id="emailConf" name="emailConf" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="emailConf">Confirm Email:</label>
+                    </div>
+                </div>
+                <div class=cont>
+                    <div class="group">
+                        <input class="inputMaterial" type="password" id="pwd" name="password" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="pwd">Password:</label>
+                    </div>
+                    <div class="group">
+                        <input class="inputMaterial" type="password" id="passConf" name="passConf" required maxlength="19">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="passConf">Confirm Password:</label>
+                    </div>
+                </div>
+                <div class="group">
+                    <input class="inputMaterial" type="phone" id="phone" name="phone" required maxlength="16">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="passConf">Phone Number *</label>
+                </div>
+                <div class="group">
+                    <input class="inputMaterial" type="number" id="creditCardNumber" name="card" required maxlength="16">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="card">Credit Card Number *</label>
+                </div>
+                <div class="group">
+                    <input class="inputMaterial" type="text" id="expiry" name="expiry" required maxlength="8">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="cardConf">Expiry Date *</label>
+    
+                </div>
+                <div class="group">
+                    <input class="inputMaterial" type="number" id="security" name="security" required maxlength="3">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="cardConf">Security Code *</label>
+                </div>
+    
+                <button class="onboard" src="confimation.html"> Submit</button>
+                <input type="reset" class="onboard" value="reset">
+            </form>
+        </div>
+        <table class="skeet">
+            <tr>
+              <th>    </th>
+              <th>Details</th> 
+              <th>   </th>
+            </tr>
+            <tr>
+              <td>POP</td>
+              <td></td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <td>Lifestyles</td>
+              <td></td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>     </td>
+              <td>$25</td>
+            </table>
     </div>
-    <div class="inputs">
-        <form id="myform" action="/action.php" method="POST" >
-
-            <div class="group">
-                <input class="inputMaterial" type="text" id="name" name="name" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label for="name">Name:</label>
-            </div>
-            <div class=cont>
-
-                <div class="group">
-                    <input class="inputMaterial" type="email" id="email" name="email" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="email">Email:</label>
-                </div>
-                <div class="group">
-                    <input class="inputMaterial" type="email" id="emailConf" name="emailConf" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="emailConf">Confirm Email:</label>
-                </div>
-            </div>
-            <div class=cont>
-                <div class="group">
-                    <input class="inputMaterial" type="password" id="pwd" name="password" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="pwd">Password:</label>
-                </div>
-                <div class="group">
-                    <input class="inputMaterial" type="password" id="passConf" name="passConf" required maxlength="19">
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label for="passConf">Confirm Password:</label>
-                </div>
-            </div>
-            <div class="group">
-                <input class="inputMaterial" type="phone" id="phone" name="phone" required maxlength="16">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label for="passConf">Phone Number *</label>
-            </div>
-            <div class="group">
-                <input class="inputMaterial" type="number" id="creditCardNumber" name="card" required maxlength="16">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label for="card">Credit Card Number *</label>
-            </div>
-            <div class="group">
-                <input class="inputMaterial" type="text" id="expiry" name="expiry" required maxlength="8">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label for="cardConf">Expiry Date *</label>
-
-            </div>
-            <div class="group">
-                <input class="inputMaterial" type="number" id="security" name="security" required maxlength="3">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label for="cardConf">Security Code *</label>
-            </div>
-
-            <input type="submit" class="onboard" value="Submit">
-            <input type="reset" class="onboard" value="reset">
-        </form>
-    </div>
-    <table class="skeet">
-        <tr>
-          <th>    </th>
-          <th>Details</th> 
-          <th>   </th>
-        </tr>
-        <tr>
-          <td>POP</td>
-          <td></td>
-          <td>$10</td>
-        </tr>
-        <tr>
-          <td>Lifestyles</td>
-          <td></td>
-          <td>$15</td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>     </td>
-          <td>$25</td>
-        </table>
 </body>
 
 

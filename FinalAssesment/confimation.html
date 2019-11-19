@@ -1,36 +1,42 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
     <title>Foxtel</title>
 
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#foxtel">Foxtel</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#discover">Discover</a></li>
-            <li><a href="#support">Support</a></li>
-            <li><a href="#watch">Watch</a></li>
-            <li class="button7"><a href="onboard.html">Sign up</a></li>
-        </ul>
+    <nav class="navFlow" id="myTopnav">
+        <a href="#foxtel" class="active">Foxtel</a>
+        <a href="#shop">Shop</a>
+        <a href="#discover">Discover</a> 
+        <a href="#support">Support</a>
+        <a href="#watch">Watch</a>
+        <a href="#signup">Sign up</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
     <div class="prog">
         <p class="label">Begin</p>
         <p class="label1">Sign Up</p>
         <p class="label2">Confirm</p>
     </div>
-    <iframe class="prog" src="Asset 1.svg" frameborder="0"></iframe>
+    <iframe class="prog" src="Asset 2.svg" frameborder="0"></iframe>
+
+    <h1 style="color: #f2410a;">Thank you for choosing Foxtel, Click below to start steaming now or my account for more information</h1>
+<div class = wrap id="confBut">
+    <button class="onboard" >Stream</button>   
+    <button class="onboard" >My Foxtel</button>
+</div>
 </body>
 </html>
 <script>
-    ,function myFunction() {
+    function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "navFlow") {
             x.className += " responsive";
