@@ -1,15 +1,17 @@
-var a = document.forms["register"]["card"].value;
-var b = document.forms["register"]["name"].value;
-var c = document.forms["register"]["email"].value;
-var d = document.forms["register"]["emailC"].value;
-var e = document.forms["register"]["pwd"].value;
-var f = document.forms["register"]["pwdC"].value;
-var g = document.forms["register"]["phone"].value;
-var h = document.forms["register"]["expiry"].value;
-var j = document.forms["register"]["security"].value;
+const a = document.forms["register"]["card"].value;
+const b = document.forms["register"]["name"].value;
+const c = document.forms["register"]["email"].value;
+const d = document.forms["register"]["emailC"].value;
+const e = document.forms["register"]["pwd"].value;
+const f = document.forms["register"]["pwdC"].value;
+const g = document.forms["register"]["phone"].value;
+const h = document.forms["register"]["expiry"].value;
+const j = document.forms["register"]["security"].value;
 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
+    
+
 })
 
 /*------------------- functions ---------------- */
